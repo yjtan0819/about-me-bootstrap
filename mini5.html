@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Mike's Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mini5.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm custom-navbar navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="images/logo.png" alt="Logo">
+                </a>
+                
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- 2nd interactive element: navbar with hover effect -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="return show('home', 'hobbies')" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="return show('hobbies', 'home')" href="#hobbies">Hobbies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- 12-column grid -->
+        <section class="col-12 col-md-8 col-lg-6" id="home" class="container">
+            <!-- CV-like content goes here -->
+            <h1 class="name">Big Mike</h1>
+            <p class="description">Professional Web Developer</p>
+
+            <div class="information">
+                <!-- Education Section -->
+                <div class="section">
+                    <h2>Education</h2>
+                    <p><strong>University of Web Development</strong></p>
+                    <p>Bachelor of Science in Web Development</p>
+                    <p>Graduated: 2019</p>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="section">
+                    <h2>Work Experience</h2>
+                    <p><strong>Web Developer at GOD AIRLINES</strong></p>
+                    <p>January 2019 - Present</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Developed and maintained company's website</li>
+                        <li>Implemented responsive designs</li>
+                    </ul>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="section" id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-12 col-md-8 col-lg-6" id="hobbies" class="container" style="display: none; float:none; margin: auto;">
+            <h2 class="fun-title">My Awesome Hobbies</h2>
+            <!-- 3rd interactive element: Buttons to update the like count-->
+            <ul class="hobbies-list">
+                <li class="hobby" id="hobby-1">
+                    <h3 class="hobby-title">📸 Hobby 1: Photography</h3>
+                    <p class="hobby-description">I love capturing moments through my camera lens. Photography allows me to express my creativity and document beautiful scenes.</p>
+                    <img class="hobby-img" src="images/hobby-1.jpg" alt="Photography"><br>
+                    <button class="btn btn-dark" onclick="likeHobby('hobby-1')">Like</button>
+                    <span class="like-count">0</span>
+                </li>
+                <li class="hobby" id="hobby-2">
+                    <h3 class="hobby-title">🏞️ Hobby 2: Hiking</h3>
+                    <p class="hobby-description">Exploring nature and hiking in the great outdoors is a passion of mine. I enjoy challenging trails and stunning vistas.</p>
+                    <img class="hobby-img" src="images/hobby-2.webp" alt="Hiking"><br>
+                    <button class="btn btn-dark" onclick="likeHobby('hobby-2')">Like</button>
+                    <span class="like-count">0</span>
+                </li>
+                <li class="hobby" id="hobby-3">
+                    <h3 class="hobby-title">🍳 Hobby 3: Cooking</h3>
+                    <p class="hobby-description">Cooking is both a hobby and a way to relax. I like experimenting with different cuisines and creating delicious dishes.</p>
+                    <img class="hobby-img" src="images/hobby-3.jpg" alt="Cooking"><br>
+                    <button class="btn btn-dark" onclick="likeHobby('hobby-3')">Like</button>
+                    <span class="like-count">0</span>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer centered-footer">
+        <div class="container">
+            <p>&copy; 2023 Big Mike | Visits: <span id="visit-count">0</span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/mini5.js"></script>
+</body>
+</html>

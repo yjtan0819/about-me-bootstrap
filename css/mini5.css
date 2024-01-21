@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    width: 10vb;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.custom-navbar{
+    background-color: black;
+    color:white;
+}
+
+.custom-navbar .nav-link {
+    color: #fff; 
+}
+
+.nav-item:hover {
+    background-color: #3d3d3d;
+    transition: 0.5s;
+}
+
+.centered-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color:white;
+}
+
+#home{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.name{
+    color: white; 
+    font-size: 6rem;
+    font-weight: 900;
+    padding-left: 3rem;
+}
+
+.description{
+    color: gray;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-left: 3rem;
+}
+
+.information{
+    padding-left: 3rem;
+}
+
+.hobby-img{
+    max-width: 100%;
+    height: auto;
+}
+
+#hobby{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.fun-title{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-left: 3rem;
+}
+
+.hobbies-list{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    list-style-type: none;
+}
